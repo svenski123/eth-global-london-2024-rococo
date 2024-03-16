@@ -3,7 +3,6 @@ pragma solidity ^0.8.21;
 import {ERC1155} from "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
-
 contract Voucher is Ownable, ERC1155 {
 
     event PromoterAdded(address indexed promoter,
@@ -87,6 +86,7 @@ contract Voucher is Ownable, ERC1155 {
 	require(offer.price == msg.value);
 
 	_mint(_deliverTo, _id, 1, "");
+	offers[_id].numIssued++;
 
 	uint rebate;
 	if (promoter.rebateBPS > 0) {
