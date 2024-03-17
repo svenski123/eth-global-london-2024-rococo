@@ -151,6 +151,10 @@ contract Voucher is Ownable, ERC1155 {
 	    offers[_id].issueLimit = _issueLimit;
     }
 
+    function resetOffers() external onlyOwner {
+	numOffers = 0;
+    }
+
     function purchaseOffer(address _promoter,
 			   uint256 _id) external payable {
 	return _purchaseOfferTo(_msgSender(), _promoter, _id);
