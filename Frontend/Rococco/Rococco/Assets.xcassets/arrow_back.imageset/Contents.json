@@ -1,12 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "Trailing element.png",
+      "filename" : "arrow_back.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Trailing element 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -13,6 +13,7 @@
 		5CB7F8C22BA6813D0099E648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB7F8C02BA6813D0099E648 /* Main.storyboard */; };
 		5CB7F8C42BA6813E0099E648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB7F8C32BA6813E0099E648 /* Assets.xcassets */; };
 		5CB7F8C72BA6813E0099E648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB7F8C52BA6813E0099E648 /* LaunchScreen.storyboard */; };
+		5CB7F8CF2BA693210099E648 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB7F8CE2BA693210099E648 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5CB7F8C32BA6813E0099E648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CB7F8C62BA6813E0099E648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CB7F8C82BA6813E0099E648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB7F8CE2BA693210099E648 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				5CB7F8BA2BA6813D0099E648 /* AppDelegate.swift */,
 				5CB7F8BC2BA6813D0099E648 /* SceneDelegate.swift */,
 				5CB7F8BE2BA6813D0099E648 /* ViewController.swift */,
+				5CB7F8CE2BA693210099E648 /* DetailController.swift */,
 				5CB7F8C02BA6813D0099E648 /* Main.storyboard */,
 				5CB7F8C32BA6813E0099E648 /* Assets.xcassets */,
 				5CB7F8C52BA6813E0099E648 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB7F8CF2BA693210099E648 /* DetailController.swift in Sources */,
 				5CB7F8BF2BA6813D0099E648 /* ViewController.swift in Sources */,
 				5CB7F8BB2BA6813D0099E648 /* AppDelegate.swift in Sources */,
 				5CB7F8BD2BA6813D0099E648 /* SceneDelegate.swift in Sources */,
