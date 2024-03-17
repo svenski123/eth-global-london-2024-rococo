@@ -31,25 +31,26 @@ contract VoucherTest is Test {
 
     function testFail_purchaseOffer_1() public {
 	vm.prank(CONSUMER1);
-	voucher.purchaseOffer(CONSUMER1, PROMOTER3, 1);
+	voucher.purchaseOffer(PROMOTER3, 1);
     }
 
     function testFail_purchaseOffer_2() public {
 	vm.prank(CONSUMER1);
-	voucher.purchaseOffer(CONSUMER1, PROMOTER1, 2);
+	voucher.purchaseOffer(PROMOTER1, 2);
     }
 
     function testFail_purchaseOffer_3() public {
 	vm.prank(CONSUMER1);
-	voucher.purchaseOffer(CONSUMER1, PROMOTER1, 1);
+	voucher.purchaseOffer(PROMOTER1, 1);
     }
 
     function test_purchaseOffer_1() public {
-	vm.prank(CONSUMER1);
-	voucher.purchaseOffer{value: 0.0001 ether}(CONSUMER1, PROMOTER1, 1);
-	voucher.purchaseOffer{value: 0.0001 ether}(CONSUMER1, PROMOTER1, 1);
-	voucher.purchaseOffer{value: 0.0001 ether}(CONSUMER1, PROMOTER1, 1);
-	voucher.purchaseOffer{value: 0.0001 ether}(CONSUMER1, PROMOTER1, 1);
-	voucher.purchaseOffer{value: 0.0001 ether}(CONSUMER1, PROMOTER1, 1);
+	vm.startPrank(CONSUMER1);
+	voucher.purchaseOffer{value: 0.0001 ether}(PROMOTER1, 1);
+	voucher.purchaseOffer{value: 0.0001 ether}(PROMOTER1, 1);
+	voucher.purchaseOffer{value: 0.0001 ether}(PROMOTER1, 1);
+	voucher.purchaseOffer{value: 0.0001 ether}(PROMOTER1, 1);
+	voucher.purchaseOffer{value: 0.0001 ether}(PROMOTER1, 1);
+	vm.stopPrank();
     }
 }
